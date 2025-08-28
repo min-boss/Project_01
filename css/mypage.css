@@ -1,0 +1,132 @@
+.mypage_container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  background-color: #fff;
+  border-top: 5px solid #F1FA7A;
+  border-bottom: 5px solid #F1FA7A;
+  border-radius: 20px;
+}
+
+
+.plofile{
+  width: 320px;
+  display: flex;
+  position: relative;
+  top: 50px;
+  left: 350px;
+}
+.plofile a{
+  font-size: 33px;
+  font-weight: 600;
+}
+
+/* 좌측 프로필 카드 */
+.profile_card {
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #FFFDE7; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profile_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;    
+  margin: 0 auto 20px;
+  margin-top: 40px;
+}
+
+
+.nickname {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.profile_settings {
+  margin: 10px 0;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background-color: #DDB67D;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile_stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333333;
+}
+
+/* 우측 정보 폼 */
+.profile_info {
+  flex: 1;
+}
+
+.profile_info form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile_info label {
+  display: flex;
+  width: 80px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile_info input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #EDEDED;
+  background-color: #FFF9E5;
+  color: #333333;
+}
+
+.update_btn {
+  width: 140px;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #DDB67D;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+.update_btn:hover {
+  background-color: #8B5E3C;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .mypage_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile_card {
+    width: 80%;
+  }
+
+  .profile_info {
+    width: 90%;
+  }
+}
+

@@ -1,0 +1,202 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
+/* main img poster */
+#home_img {
+    width: 1920px;
+    margin: 0 auto 50px auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 90px;
+}
+
+.home_card {
+    position: relative;
+    width: 220px;
+    height: 180px;
+    overflow: hidden;
+    border: 4px solid #fff3c6; 
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.home_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+.home_card:hover img {
+    transform: scale(1.1) translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.home_card .overlay_text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-shadow: none;
+    background: none;
+    white-space: nowrap;
+}
+
+.home_card:hover .overlay_text {
+    opacity: 1;
+}
+/* 더보기 */
+#home_card_more {
+    width: 120px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: #DDB67D;
+}
+
+#home_card_more a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* 메뉴 카테고리 텍스트 */
+.cardtext{
+    width: 250px;
+    border-radius: 20px;
+    background-color: #DDB67D;
+    text-align: center;
+    margin: 30px;
+    /* margin-left: 200px; */
+}
+.cardtext a{
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+}
+/* 더보기 */
+#home_more {
+    width: 120px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    align-self: center;
+}
+
+#home_more a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* link_icon */
+.link_icon {
+    width: 1920px;
+    margin: 0 auto 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FFF9E5;
+}
+
+.link_icon a {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.link_icon img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border: 3px solid #FFD633;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.link_icon span {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #FFE066; 
+    border-radius: 5px;
+    padding: 2px 6px;
+}
+
+/* hover 시 효과 */
+.link_icon a:hover span {
+    display: block;
+}
+
+/* sub img 1/4 */
+.cardsubtext{
+    width: 300px;
+    border-radius: 20px;
+    background-color: #DDB67D;
+    text-align: center;
+    /* margin: 30px; */
+    margin-left: 30px;
+}
+.cardsubtext a{
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+}
+#sub_img {
+    width: 1820px;
+    margin: 0 auto 60px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+
+#sub_img div {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#sub_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: grid;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+
+/* 이미지 hover 시 확대 */
+#sub_img div:hover img {
+    transform: scale(1.1);
+}
+
+/* overlay_text 제거 */
+#sub_img .overlay_text {
+    display: none;
+}

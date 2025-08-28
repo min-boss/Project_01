@@ -1,0 +1,211 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+/* sub_card */
+.sub_card {
+    margin-top: 30px;
+    padding: 0;
+}
+
+.top5ps {
+    width: 250px;
+    border-radius: 20px;
+    background-color: #DDB67D;
+    text-align: center;
+    /* margin: 30px; */
+    /* margin-left: 120px; */
+}
+
+.top5ps a {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+}
+
+.tap5 {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin-bottom: -40px;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    gap: 20px;
+}
+
+.tap5 img {
+    width: 200px;
+    height: 210px;
+    border: 6px solid #FFD633;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.shopcard .overlay_text {
+    position: relative;
+    bottom: 110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    white-space: nowrap;
+}
+
+.shopcard:hover img {
+    opacity: 0.3;
+}
+
+.shopcard:hover .overlay_text {
+    opacity: 1;
+}
+
+/* category_choice */
+.category_choice {
+    display: flex;
+    width: 600px;
+    /* margin-left: 80px; */
+    /* justify-content: space-around; */
+    gap: 10px;
+    margin-top: 19px;
+}
+
+.category_choice a {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #DDB67D;
+    color: white;
+    justify-content: start;
+}
+
+/* sub shop items */
+.itempick {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+}
+
+.itempick img {
+    width: 100%;
+    height: auto;
+}
+
+/* 텍스트 위치 조정 */
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.text span,
+.text p,
+.text a {
+    margin: 0;
+    line-height: 1;
+}
+
+/* 텍스트 디자인 */
+.text span {
+    font-size: 22px;
+    font-weight: 900;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.text p {
+    font-size: 25px;
+    font-weight: 900;
+    color: #FFAF4D;
+}
+
+.text a {
+    font-size: 18px;
+    font-weight: 900;
+    color: black;
+}
+/* 별점, 빠른배송 */
+.star a{
+    color: #FFD633;
+    font-size: 33px;
+}
+
+/* 메인 div */
+.best {
+    width: 1820px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 120px;
+    margin-top: 30px auto;
+}
+
+/* 아이템 카드 */
+.ITEM {
+    border: 1px solid rgb(222, 222, 222);
+    height: 450px;
+    box-shadow: 0px 0px 5px gray;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.ITEM img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+/* 반응형 */
+@media (max-width: 1200px) {
+    .best {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .best {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category_choice {
+        width: 80%;
+        /* margin-left: 20px; */
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .best {
+        grid-template-columns: 1fr;
+    }
+
+    .top5ps {
+        margin-left: 20px;
+        width: 200px;
+    }
+
+    .tap5 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tap5 img {
+        width: 150px;
+        height: 160px;
+    }
+}
