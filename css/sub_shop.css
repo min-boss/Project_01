@@ -169,7 +169,16 @@ header {
     height: 230px;
     object-fit: cover;
 }
+.dvre{
+    width: 110px;
+    background-color: #FFD633;
+    display: flex;
+    font-size: 18px;
+    position: relative;
+    top: 0;
+    right: 0;
 
+}
 /* 반응형 */
 @media (max-width: 1200px) {
     .best {
